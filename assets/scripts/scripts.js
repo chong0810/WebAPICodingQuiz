@@ -43,8 +43,8 @@ var scoreKeeper = 0;
 
 // creating viewScores tab
 var viewScores = document.createElement("button");
-viewScores.textContent = "View High Score";
-$("#viewScores").click(viewScore);
+viewScores.textContent = "View Score";
+$("#viewScores").click(checkFinish);
 document.getElementById("viewScores").appendChild(viewScores);
 viewScores.setAttribute("class" , "btn btn-success");
 
@@ -91,9 +91,6 @@ function playGame () {
 renderQuestion();
 renderQuestionText();
 timerFunction();
-
-
-
 
 }
 
@@ -165,10 +162,6 @@ renderQuestionText();
 
 }
 
-// this will be stored
-
-
-
 // View Scores
 var scoreBoard = [];
 function viewScore() {
@@ -196,3 +189,8 @@ var list = document.createElement("li");
 
 }
 
+function checkFinish () {
+    renderCount = 0;
+    timeLeft = 60;
+    viewScore();
+}
