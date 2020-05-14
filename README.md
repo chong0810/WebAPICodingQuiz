@@ -14,7 +14,7 @@ User is able to view the scoreboard anytime by pressing scoreboard button.
 
 Through this project, I have learned how to use DOM and time manipulation.
 
-<img src="./assets/images/webAPI.jpg" width="50%" alt="webAPI Picture" >
+<img src="assets/images/webAPI.JPG" width="50%" alt="webAPI Picture" >
 
 https://chong0810.github.io/WebAPICodingQuiz/
 
