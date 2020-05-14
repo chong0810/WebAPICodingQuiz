@@ -64,6 +64,7 @@ var timer = document.createElement("p");
 var timeChecker;
 document.getElementById("timer").appendChild(timer);
 timer.setAttribute("class" , "btn btn-success");
+
 function timerFunction () {
     timeChecker = setInterval(function() {
     timer.textContent = timeLeft + " seconds left";
@@ -164,7 +165,10 @@ renderQuestionText();
 
 // View Scores
 var scoreBoard = [];
+var scoreBoardDisplayLimiter = 0;
 function viewScore() {
+
+ if (scoreBoardDisplayLimiter < 1) {    
 
  if (localStorage.getItem("scoreBoard")) {
      scoreBoard = JSON.parse(localStorage.getItem("scoreBoard"));
@@ -186,11 +190,15 @@ var list = document.createElement("li");
     list.setAttribute("class", "score");
 }
     localStorage.setItem("scoreBoard",JSON.stringify(scoreBoard));
-
+}
+scoreBoardDisplayLimiter++;
 }
 
 function checkFinish () {
     renderCount = 0;
     timeLeft = 60;
+
     viewScore();
+
 }
+
