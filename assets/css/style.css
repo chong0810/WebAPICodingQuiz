@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+body {
+    background-color: skyblue;
+}
+
+
+.center {
+    display: flex;
+
+    justify-content: center;
+}
+
+.margintop {
+    margin-top: 50pt;
+}
+
+.margintop2 {
+    margin-top: 100pt;
+}
+
+.marginBottom {
+    margin-bottom: 50pt;
+}
+
+.score {
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.quizArea {
+
+    background-color: white;
+
+
+}
