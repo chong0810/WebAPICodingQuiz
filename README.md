@@ -8,6 +8,15 @@ When all the questions are all answered or the timer reaches 0, the game is over
 
 When the game is over, the user is prompted to put his or her initials to leave the score on the scoreboard.
 
-The score will be stored in local storage.
+The score will be stored in local storage and will be accessible even when the page is refreshed.
 
 User is able to view the scoreboard anytime by pressing scoreboard button.
+
+Through this project, I have learned how to use DOM and time manipulation.
+
+<img src="assets/images/webAPI.jpg" width="50%" alt="webAPI Picture" >
+
+https://chong0810.github.io/WebAPICodingQuiz/
+
+
+

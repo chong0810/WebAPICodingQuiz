@@ -10,11 +10,11 @@ var questions =[{
 
 {
     question: "Which is the correct bracket notations for array?",
-    choiceA : " () ",
-    choiceB : " [] ",
-    choiceC : " {} ",
-    choiceD : " <> ",
-    correct : " [] "
+    choiceA : " ( ) ",
+    choiceB : " [ ] ",
+    choiceC : " { } ",
+    choiceD : " < > ",
+    correct : " [ ] "
 },
 
 {
@@ -59,7 +59,7 @@ playButton.setAttribute("class" , "btn btn-success");
 
 
 // timer
-var timeLeft = 100;
+var timeLeft = 60;
 var timer = document.createElement("p");
 var timeChecker;
 document.getElementById("timer").appendChild(timer);
@@ -145,7 +145,8 @@ a4.textContent = questions[renderCount].choiceD;
 
 // check for answers
 function checkAnswer () {
-if (this === questions[renderCount].correct) {
+    
+if ( this.textContent == questions[renderCount].correct) {
 scoreKeeper = 50 + scoreKeeper;
 } else {
 timeLeft = timeLeft - 10;
